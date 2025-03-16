@@ -19,18 +19,14 @@ nix-run:
     nix develop -c "cargo" "run"
 
 # Check
-check: clippy
+check:
     cargo check
     cargo fmt
     cargo nextest run
+    cargo clippy
     taplo fmt
 
-fix: clippy-fix
+fix:
+    cargo clippy --fix --allow-staged
     cargo fmt
     taplo fmt
-    
-# Clippy
-clippy:
-    cargo clippy -- (nu scripts/clippy.nu)
-clippy-fix:
-    cargo clippy --fix -- (nu scripts/clippy.nu) 
