@@ -50,7 +50,6 @@
     nonstandard_macro_braces = "warn"
     option_as_ref_cloned = "warn"
     or_fun_call = "warn"
-    pathbuf_init_then_push = "warn"
     pub_without_shorthand = "deny"
     redundant_closure_for_method_calls = "warn"
     same_name_method = "warn"
@@ -123,3 +122,8 @@
     unchecked_duration_subtraction = "warn"
     unnecessary_join = "warn"
     unwrap_used = "warn"                          # With clippy.toml `allow-unwrap-in-test`
+
+    # Removing
+    enum_variant_names = "allow"
+    type_complexity = "allow"
+    upper_case_acronyms = "allow"
