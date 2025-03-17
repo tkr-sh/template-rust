@@ -20,7 +20,6 @@
     cloned_instead_of_copied = "warn"
     collection_is_never_read = "warn"
     create_dir = "warn"
-    doc_comment_double_space_linebreaks = "warn"
     elidable_lifetime_names = "warn"
     empty_drop = "warn"
     empty_enum_variants_with_brackets = "warn"
