@@ -125,5 +125,6 @@
 
     # Removing
     enum_variant_names = "allow"
+    too_many_arguments = "allow"
     type_complexity = "allow"
     upper_case_acronyms = "allow"
